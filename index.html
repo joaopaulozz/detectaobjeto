@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconhecimento de Objetos com TensorFlow.js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Reconhecimento de Objetos com TensorFlow.js</h1>
+    <div id="cameraContainer">
+        <video id="cameraView" autoplay playsinline></video>
+    </div>
+    <div id="objectInfo">
+        <h2>Informações do Objeto</h2>
+        <p id="objectName">Aponte a câmera para um objeto...</p>
+    </div>
+
+    <!-- Biblioteca tensorflow responsavel por reconhecer o objeto -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
